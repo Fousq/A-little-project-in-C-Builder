@@ -1,0 +1,59 @@
+//---------------------------------------------------------------------------
+
+#ifndef MainFormH
+#define MainFormH
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <ExtCtrls.hpp>
+#include <Buttons.hpp>
+//---------------------------------------------------------------------------
+class TMainWindow : public TForm
+{
+__published:	// IDE-managed Components
+        TPanel *EnterPanel;
+        TPanel *RegistrationPanel;
+        TPanel *AdminPanel;
+        TButton *EnterButton;
+        TButton *RegistrationButton;
+        TButton *AdminButton;
+        TLabel *Label1;
+        TEdit *LoginEdit;
+        TEdit *PasswordEdit;
+        TButton *GoToUserForm;
+        TComboBox *RegistrateAsBox;
+        TButton *GoToRegistrationForm;
+        TLabel *Label2;
+        TLabel *Label3;
+        TEdit *AdminPasswordEdit;
+        TButton *GoToAdminForm;
+        TLabel *Label4;
+        TBitBtn *GoToMainButton3;
+        TBitBtn *GoToMainButton2;
+        TBitBtn *GoToMainButton1;
+        void __fastcall EnterButtonClick(TObject *Sender);
+        void __fastcall RegistrationButtonClick(TObject *Sender);
+        void __fastcall AdminButtonClick(TObject *Sender);
+        void __fastcall FormShow(TObject *Sender);
+        void __fastcall GoToMainButton1Click(TObject *Sender);
+        void __fastcall GoToMainButton3Click(TObject *Sender);
+        void __fastcall GoToMainButton2Click(TObject *Sender);
+        void __fastcall GoToAdminFormClick(TObject *Sender);
+        void __fastcall GoToRegistrationFormClick(TObject *Sender);
+        void __fastcall GoToUserFormClick(TObject *Sender);
+        void __fastcall AdminPasswordEditKeyPress(TObject *Sender,
+          char &Key);
+        void __fastcall LoginEditKeyPress(TObject *Sender, char &Key);
+        void __fastcall PasswordEditKeyPress(TObject *Sender, char &Key);
+        void __fastcall RegistrateAsBoxClick(TObject *Sender);
+        void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
+private:	// User declarations
+public:		// User declarations
+        __fastcall TMainWindow(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TMainWindow *MainWindow;
+//---------------------------------------------------------------------------
+#endif

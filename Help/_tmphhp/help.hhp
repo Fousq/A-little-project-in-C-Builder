@@ -1,0 +1,34 @@
+[OPTIONS]
+TITLE=YourProject
+Full-text search=Yes
+Display compile notes=YES
+Display compile progress=YES
+Compatibility=1.1
+Default Window=Main
+Language=0x409 English (United States)
+Default Font=Arial,8,0
+Compiled file=help.chm
+Error Log file=help.log
+Contents file=help.hhc
+Index File=help.hhk
+Default Topic=обавторе.html
+
+[FILES]
+добропожаловать.html
+войти.html
+рабочий.html
+работадаель.html
+админ.html
+обавторе.html
+
+
+[WINDOWS]
+Main="Main","help.hhc","help.hhk","","", ,,,,0x061520,200, 0x00304E, [271, 322, 643, 516]  , 0x307e, , , , , , , , 0
+Popup="Popup","help.hhc","help.hhk","","", ,,,,0x061520,200, 0x00304E, [271, 322, 643, 516]  , 0x307e, , , , , , , , 0
+
+
+[MAP]
+#include help.h
+
+[TEXT POPUPS]
+CSHelp.txt
